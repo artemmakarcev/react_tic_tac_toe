@@ -1,25 +1,12 @@
-function Square({value}) {
-  return <button className="square">{value}</button>
+
+import React from "react";
+
+import Board from "./components/Board";
+
+function App(){
+  return (
+    <Board/>
+  )
 }
 
-export default function Board() {
-  return (
-    <>
-      <div className="board-row">
-        <Square value={1}/>
-        <Square/>
-        <Square/>
-      </div>
-      <div className="board-row">
-        <Square/>
-        <Square/>
-        <Square/>
-      </div>
-      <div className="board-row">
-        <Square/>
-        <Square/>
-        <Square/>
-      </div>
-    </>
-  );
-}
+export default App;
